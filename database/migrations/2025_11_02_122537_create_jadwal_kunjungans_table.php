@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('jadwal_kunjungans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pasien_id')->constrained('pasiens')->onDelete('cascade');
+            $table->date('tanggal_kunjungan');
+            $table->time('waktu')->nullable();
+            $table->string('lokasi')->nullable();
+            $table->text('catatan')->nullable();
+            $table->boolean('pengingat_otomatis')->default(true);
             $table->timestamps();
         });
     }
