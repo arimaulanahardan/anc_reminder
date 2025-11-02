@@ -21,7 +21,8 @@ class JadwalKunjunganFactory extends Factory
             'tanggal_kunjungan' => fake()->date(),
             'waktu' => fake()->time(),
             'lokasi' => fake()->address(),
-            'catatan' => fake()->text(),
+            'pesan_pengingat' => fake()->sentence(),
+            'frekuensi_pengingat' => fake()->randomElement(['sekali', 'mingguan', 'dua_minggu_sekali', 'bulanan']),
             'pengingat_otomatis' => fake()->boolean(),
         ];
     }

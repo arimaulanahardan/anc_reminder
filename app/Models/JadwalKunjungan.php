@@ -15,7 +15,8 @@ class JadwalKunjungan extends Model
         'tanggal_kunjungan',
         'waktu',
         'lokasi',
-        'catatan',
+        'pesan_pengingat',
+        'frekuensi_pengingat',
         'pengingat_otomatis',
     ];
 

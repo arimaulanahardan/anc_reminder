@@ -23,7 +23,15 @@ class JadwalKunjunganForm
                     ->required(),
                 TimePicker::make('waktu'),
                 TextInput::make('lokasi'),
-                Textarea::make('catatan')
+                Select::make('frekuensi_pengingat')
+                    ->options([
+                        'sekali' => 'Sekali',
+                        'mingguan' => 'Mingguan',
+                        'dua_minggu_sekali' => 'Dua Minggu Sekali',
+                        'bulanan' => 'Bulanan',
+                    ])
+                    ->required(),
+                Textarea::make('pesan_pengingat')
                     ->columnSpanFull(),
                 Toggle::make('pengingat_otomatis')
                     ->required(),

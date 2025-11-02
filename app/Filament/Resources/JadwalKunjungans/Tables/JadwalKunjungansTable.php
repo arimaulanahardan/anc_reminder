@@ -28,6 +28,8 @@ class JadwalKunjungansTable
                     ->searchable(),
                 IconColumn::make('pengingat_otomatis')
                     ->boolean(),
+                TextColumn::make('frekuensi_pengingat')
+                    ->sortable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

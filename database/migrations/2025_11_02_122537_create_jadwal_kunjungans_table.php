@@ -17,7 +17,8 @@ return new class extends Migration
             $table->date('tanggal_kunjungan');
             $table->time('waktu')->nullable();
             $table->string('lokasi')->nullable();
-            $table->text('catatan')->nullable();
+            $table->text('pesan_pengingat')->nullable();
+            $table->enum('frekuensi_pengingat', ['sekali', 'mingguan', 'dua_minggu_sekali', 'bulanan'])->default('sekali');
             $table->boolean('pengingat_otomatis')->default(true);
             $table->timestamps();
         });
