@@ -25,7 +25,7 @@ Aplikasi membutuhkan **3 terminal terpisah** yang berjalan bersamaan.
 
 ### 🟦 Terminal 1 — WhatsApp Service (Node.js)
 ```bash
-cd "d:/caca nitip/JADIII/filament-gemini/wa-service"
+cd "d:anc_reminder/wa-service"
 npm start
 ````
 
@@ -40,7 +40,7 @@ WhatsApp Service running on port 3000
 ### 🟩 Terminal 2 — Laravel Server
 
 ```bash
-cd "d:/caca nitip/JADIII/filament-gemini/backend"
+cd "d:anc_reminder/backend"
 php artisan serve
 ```
 
@@ -52,7 +52,7 @@ Akses Admin Panel:
 ### 🟨 Terminal 3 — Scheduler (Reminder Otomatis)
 
 ```bash
-cd "d:/caca nitip/JADIII/filament-gemini/backend"
+cd "d:anc_reminder/backend"
 php artisan schedule:work
 ```
 
