@@ -1,10 +1,3 @@
-Siap. **SELURUH OUTPUT** akan berada **DI DALAM SATU BLOK MARKDOWN**, TANPA TEKS DI LUAR BLOK.
-
-Berikut README **FULL**, **HANYA MARKDOWN**, **TIDAK ADA KALIMAT DI LUAR BLOK**.
-
----
-
-````markdown
 # 🩺 ANC Reminder Application  
 Sistem Reminder Kunjungan ANC untuk Bidan  
 (Laravel + Filament + Node.js Baileys)
@@ -171,11 +164,3 @@ Aplikasi sudah dapat:
 * Mengirim otomatis & manual
 * Menyimpan log
 
----
-
-# 📌 END OF README
-
-```
-
----
-```
